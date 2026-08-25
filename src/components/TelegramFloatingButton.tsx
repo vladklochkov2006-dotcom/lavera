@@ -10,11 +10,11 @@ export default function TelegramFloatingButton() {
       whileHover={{ scale: 1.08 }}
       whileTap={{ scale: 0.94 }}
       onClick={() => openTelegramOrder({ notes: 'Быстрый вопрос' })}
-      className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-40 w-13 h-13 md:w-14 md:h-14 rounded-full bg-[#2AABEE] text-white shadow-xl shadow-[#2AABEE]/35 flex items-center justify-center cursor-pointer transition-shadow hover:shadow-[#2AABEE]/50 group"
+      className="fixed bottom-5 right-5 z-50 w-13 h-13 md:w-14 md:h-14 rounded-full bg-[#2AABEE] text-white shadow-xl shadow-[#2AABEE]/40 flex items-center justify-center cursor-pointer transition-shadow hover:shadow-[#2AABEE]/60 group"
       aria-label="Написать в Telegram"
       title="Написать в Telegram"
     >
-      <span className="absolute -top-1 -right-1 flex h-3 w-3">
+      <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-300 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
       </span>

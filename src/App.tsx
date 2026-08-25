@@ -7,7 +7,6 @@ import Advantages from './components/Advantages';
 import DeliveryPaymentSection from './components/DeliveryPaymentSection';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import MobileStickyCTA from './components/MobileStickyCTA';
 import ProductDetailModal from './components/ProductDetailModal';
 import GiftBuilderModal from './components/GiftBuilderModal';
 import CartDrawer from './components/CartDrawer';
@@ -92,7 +91,7 @@ function App() {
       />
 
       {/* Main Content */}
-      <main className="flex-grow w-full pb-20 md:pb-0">
+      <main className="flex-grow w-full">
         {/* Hero Section with Interactive Selector */}
         <Hero
           onOpenGiftBuilder={() => setIsGiftBuilderOpen(true)}
@@ -125,13 +124,6 @@ function App() {
 
       {/* Footer */}
       <Footer onNavigateSection={handleNavigateSection} />
-
-      {/* Mobile Sticky CTA */}
-      <MobileStickyCTA
-        cartCount={totalCartCount}
-        onOpenCart={() => setIsCartOpen(true)}
-        onOpenGiftBuilder={() => setIsGiftBuilderOpen(true)}
-      />
 
       {/* Floating Telegram Round Button in Bottom-Right Corner */}
       <TelegramFloatingButton />
