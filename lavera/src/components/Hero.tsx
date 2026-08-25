@@ -106,7 +106,7 @@ export default function Hero({
             className="text-lg text-text-dark/70 max-w-lg mx-auto md:mx-0"
           >
             «Я хочу сделать ей приятно, но не знаю, что купить». <br className="hidden md:block" />
-            Не нужно ничего придумывать. LAVÉRA уже всё сделала за вас — личный менеджер согласует все детали в Telegram.
+            Не нужно ничего придумывать. LAVÉRA уже всё сделала за вас — персональный консьерж согласует все детали.
           </motion.p>
 
           <motion.div
@@ -269,7 +269,7 @@ export default function Hero({
                         className="w-full bg-[#2AABEE] hover:bg-[#229ED9] text-white py-2 px-3 rounded-xl text-xs font-medium flex items-center justify-center gap-1.5 transition-all"
                       >
                         <Send className="w-3.5 h-3.5" />
-                        <span>Заказать в Telegram</span>
+                        <span>Быстрый заказ</span>
                       </button>
 
                       <div className="flex gap-2">

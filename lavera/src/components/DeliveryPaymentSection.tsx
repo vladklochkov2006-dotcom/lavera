@@ -7,14 +7,14 @@ export default function DeliveryPaymentSection() {
     {
       icon: Send,
       step: '01',
-      title: 'Быстрый заказ в Telegram',
-      desc: 'Вы выбираете готовый подарок на сайте или описываете свои пожелания персональному консьерж-менеджеру.'
+      title: 'Быстрый заказ',
+      desc: 'Вы выбираете готовый подарок на сайте или описываете свои пожелания персональному консьержу.'
     },
     {
       icon: Camera,
       step: '02',
       title: 'Согласование фото перед отправкой',
-      desc: 'Флористы и кондитеры собирают сет, а менеджер присылает детальные фото и видео готовой композиции вам в чат.'
+      desc: 'Флористы и кондитеры собирают сет, а консьерж присылает детальные фото и видео готовой композиции вам.'
     },
     {
       icon: CreditCard,
@@ -43,7 +43,7 @@ export default function DeliveryPaymentSection() {
             Как мы работаем & Оплата
           </h2>
           <p className="text-text-dark/60 max-w-xl mx-auto text-base">
-            Персональный консьерж-сервис: от подбора до вручения с фотоотчетом в Telegram.
+            Персональный консьерж-сервис: от подбора до вручения с фотоотчетом.
           </p>
         </div>
 
@@ -76,14 +76,14 @@ export default function DeliveryPaymentSection() {
           ))}
         </div>
 
-        {/* Telegram CTA */}
+        {/* CTA */}
         <div className="text-center pt-4">
           <button
             onClick={() => openTelegramOrder({ notes: 'Вопрос по заказу и оплате' })}
             className="inline-flex items-center gap-2 bg-[#2AABEE] hover:bg-[#229ED9] text-white px-8 py-4 rounded-full font-medium text-base shadow-lg shadow-[#2AABEE]/25 transition-all transform hover:-translate-y-1"
           >
             <Send className="w-5 h-5" />
-            <span>Задать вопрос менеджеру в Telegram</span>
+            <span>Задать вопрос консьержу</span>
           </button>
         </div>
 

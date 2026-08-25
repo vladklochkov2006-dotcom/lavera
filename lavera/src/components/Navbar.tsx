@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { ShoppingBag, Menu, X, Flower2, Send } from 'lucide-react';
+import { ShoppingBag, Menu, X, Flower2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { openTelegramOrder } from '../utils/telegram';
 
 interface NavbarProps {
   cartCount: number;
@@ -99,16 +98,6 @@ export default function Navbar({
           </div>
           
           <div className="flex items-center gap-4 border-l border-gray-200 pl-6">
-            {/* Direct Telegram Chat Button */}
-            <button
-              onClick={() => openTelegramOrder({ notes: 'Консультация с сайта' })}
-              className="text-xs font-medium text-text-dark/70 hover:text-[#2AABEE] transition-colors flex items-center gap-1.5"
-              title="Написать менеджеру в Telegram"
-            >
-              <Send className="w-3.5 h-3.5 text-[#2AABEE]" />
-              <span>Менеджер</span>
-            </button>
-
             {/* Custom Gift Builder Button */}
             <button
               onClick={onOpenGiftBuilder}
@@ -134,14 +123,7 @@ export default function Navbar({
         </div>
 
         {/* Mobile controls */}
-        <div className="flex items-center gap-3 md:hidden">
-          <button
-            onClick={() => openTelegramOrder({ notes: 'Консультация из мобильного меню' })}
-            className="p-2 text-[#2AABEE]"
-            aria-label="Telegram"
-          >
-            <Send className="w-5 h-5" />
-          </button>
+        <div className="flex items-center gap-2 md:hidden">
           <button
             onClick={onOpenCart}
             className="relative p-2 text-text-dark"
@@ -203,7 +185,7 @@ export default function Navbar({
                 </motion.button>
               ))}
 
-              <div className="pt-4 mt-auto space-y-3">
+              <div className="pt-4 mt-auto">
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);
@@ -212,17 +194,6 @@ export default function Navbar({
                   className="w-full py-4 bg-primary text-white rounded-2xl text-base font-medium"
                 >
                   Собрать идеальный подарок
-                </button>
-
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    openTelegramOrder({ notes: 'Консультация с мобильного меню' });
-                  }}
-                  className="w-full py-3.5 bg-[#2AABEE] text-white rounded-2xl text-base font-medium flex items-center justify-center gap-2"
-                >
-                  <Send className="w-4 h-4" />
-                  <span>Написать менеджеру в Telegram</span>
                 </button>
               </div>
             </div>

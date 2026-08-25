@@ -247,7 +247,7 @@ export default function GiftBuilderModal({ isOpen, onClose }: GiftBuilderModalPr
                 className="w-full md:w-auto bg-[#2AABEE] hover:bg-[#229ED9] text-white py-3.5 px-6 rounded-2xl font-medium text-sm flex items-center justify-center gap-2 shadow-lg shadow-[#2AABEE]/25 transition-all transform hover:-translate-y-0.5"
               >
                 <Send className="w-4 h-4" />
-                <span>Согласовать состав в Telegram</span>
+                <span>Оформить заказ</span>
               </button>
             </div>
           </div>

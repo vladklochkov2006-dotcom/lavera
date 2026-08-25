@@ -224,7 +224,7 @@ export default function CartDrawer({
                   </div>
 
                   <div className="text-[11px] text-text-dark/60 leading-tight">
-                    * Менеджер согласует фото букета/бокса в Telegram перед отправкой и вышлет ссылку на оплату.
+                    * Персональный консьерж согласует фото букета/бокса перед отправкой и вышлет детали для оплаты.
                   </div>
 
                   <button
@@ -232,7 +232,7 @@ export default function CartDrawer({
                     className="w-full bg-[#2AABEE] hover:bg-[#229ED9] text-white py-4 px-4 rounded-2xl font-medium text-sm flex items-center justify-center gap-2 shadow-lg shadow-[#2AABEE]/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Оформить заказ в Telegram</span>
+                    <span>Оформить заказ</span>
                   </button>
                 </div>
               )}

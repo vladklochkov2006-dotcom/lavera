@@ -11,6 +11,7 @@ import MobileStickyCTA from './components/MobileStickyCTA';
 import ProductDetailModal from './components/ProductDetailModal';
 import GiftBuilderModal from './components/GiftBuilderModal';
 import CartDrawer from './components/CartDrawer';
+import TelegramFloatingButton from './components/TelegramFloatingButton';
 import { Product } from './data/products';
 import { OrderItem } from './utils/telegram';
 
@@ -118,7 +119,7 @@ function App() {
         {/* Delivery & Payment concierge details */}
         <DeliveryPaymentSection />
 
-        {/* FAQ with updated payment & Telegram details */}
+        {/* FAQ with updated payment & concierge details */}
         <FAQ />
       </main>
 
@@ -131,6 +132,9 @@ function App() {
         onOpenCart={() => setIsCartOpen(true)}
         onOpenGiftBuilder={() => setIsGiftBuilderOpen(true)}
       />
+
+      {/* Floating Telegram Round Button in Bottom-Right Corner */}
+      <TelegramFloatingButton />
 
       {/* Modals & Drawers */}
       <ProductDetailModal

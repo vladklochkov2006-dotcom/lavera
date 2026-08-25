@@ -230,7 +230,7 @@ export default function CatalogSection({
                       className="w-full bg-[#2AABEE] hover:bg-[#229ED9] text-white py-2.5 px-3 rounded-xl text-xs font-medium flex items-center justify-center gap-1.5 shadow-sm transition-all"
                     >
                       <Send className="w-3.5 h-3.5" />
-                      <span>Заказать в Telegram</span>
+                      <span>Быстрый заказ</span>
                     </button>
 
                     <button
@@ -284,7 +284,7 @@ export default function CatalogSection({
               Не нашли то, что искали?
             </h3>
             <p className="text-white/80 text-xs sm:text-sm max-w-xl">
-              Соберите свой уникальный бокс в нашем конструкторе или напишите менеджеру в Telegram — мы воплотим любые ваши пожелания!
+              Соберите свой уникальный бокс в нашем конструкторе или обратитесь за персональной консультацией.
             </p>
           </div>
 
@@ -300,7 +300,7 @@ export default function CatalogSection({
               className="px-5 py-3 bg-white/15 hover:bg-white/25 border border-white/20 rounded-xl font-medium text-xs sm:text-sm transition-all text-center flex items-center justify-center gap-2"
             >
               <Send className="w-3.5 h-3.5" />
-              <span>Написать менеджеру</span>
+              <span>Консультация</span>
             </button>
           </div>
         </div>

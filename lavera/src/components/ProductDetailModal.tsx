@@ -169,13 +169,13 @@ export default function ProductDetailModal({ product, onClose, onAddToCart }: Pr
 
             {/* Action Buttons */}
             <div className="space-y-3 pt-2">
-              {/* Direct Telegram Order Button */}
+              {/* Direct Order Button */}
               <button
                 onClick={handleTelegramOrder}
                 className="w-full bg-[#2AABEE] hover:bg-[#229ED9] text-white py-3.5 px-4 rounded-xl font-medium text-sm flex items-center justify-center gap-2 shadow-lg shadow-[#2AABEE]/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
               >
                 <Send className="w-4 h-4" />
-                <span>Заказать через Telegram-менеджера</span>
+                <span>Оформить заказ</span>
               </button>
 
               {/* Add to Cart Button */}
